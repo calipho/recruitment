@@ -28,8 +28,8 @@ def get_user_skills(skills):
 
 
 def get_user_cv(skills):
-    cv = {"name": input("write your name "), "age": input(
-        "write your age "), "skills": get_user_skills(skills), "experience": input("write your experience ")}
+    cv = {"name": input("write your name "), "age": int(input(
+        "write your age ")), "skills": get_user_skills(skills), "experience": int(input("write your experience "))}
 
     print(cv)
     return cv
